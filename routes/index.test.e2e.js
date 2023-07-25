@@ -10,7 +10,7 @@ describe("GET /", () => {
     it("should return foobar response", async () => {
 
         return request(app)
-            .get('/')
+            .get('/foobar')
             .expect(200, {
                 foo: 'bar'
             });
